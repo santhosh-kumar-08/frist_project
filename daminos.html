@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="daminos.css">
+   
+</head> 
+<body>
+
+  <div class="nav">
+    <a href="home.html">Home</a>
+    <a href="daminos.html">Daminos</a>
+    <a href="home.html">KFC</a>
+    <a href="home.html">Mc.Donalds</a>
+    <a href="amul.html">Amul</a>
+    
+  </div>
+
+  <div class="h1">
+    <h1>VEG PIZZA🍕</h1>
+  </div>
+  <section>
+    <div class="container">
+
+        <div class="slide">
+
+            <div class="items" style="background-image: url(images/img1.jpg);  ">
+               <div class="content">
+                <div class="name">Paneer Tikka Pizza🍕</div>
+                <div class="des">
+                    <ul>
+                        <li>Tandoori-style paneer, capsicum, onions, spicy tomato sauce</li>
+                        <li>Super popular among vegetarians</li>
+                    </ul>
+                </div>
+                <button>Order now</button>
+               </div>
+            
+            
+            </div>
+            
+            <div class="items" style="background-image: url(images/img2.jpg); ">
+                <div class="content">
+                 <div class="name">Veggie Paradise
+
+                 </div>
+                 <div class="des"><ul>
+                    <li>Corn, capsicum, black olives, red paprika, cheese
+                        </li>
+                        <li> A colorful and tasty combo</li>
+                 </ul></div>
+                 <button>Order now</button>
+                </div>
+             
+             
+             </div>
+             
+            <div class="items" style="background-image: url(images/img3.jpg); ">
+                <div class="content">
+                 <div class="name">Peppy Paneer</div>
+                 <div class="des">
+                    <ul><li>Paneer with crunchy capsicum and red paprika</li>
+                    <li>Slightly spicy, very Indian
+
+                    </li></ul>
+                 </div>
+                 <button>Order now</button>
+                </div>
+             
+             
+             </div>
+             
+            <div class="items" style="background-image: url(images/img4.jpg); ">
+                <div class="content">
+                 <div class="name">Cheese Burst Pizza</div>
+                 <div class="des"><ul>
+                    <li>Not a topping but a style—molten cheese inside the crust!</li>
+                    <li>Invented in India, and everyone loves it 😋</li>
+                 </ul></div>
+                 <button>Order now</button>
+                </div>
+             
+             
+             </div>
+
+        </div>
+        <div class="button">
+            <button class="prev" onclick="change()">←</button>
+            <button class="next" onclick="change()">→</i></i></button>
+
+        </div>
+    </div>
+</section>
+<section style="margin-top: 600px;">
+    <div class="h1">
+        <h1>Chicken Pizza🍕</h1>
+    </div>
+    <div class="empty">
+        <img src="images/img12.jpg" >
+    </div>
+</section>
+   
+</body>
+</html>
+    <script >
+
+  
+ let next = document.querySelector('.next');
+    let prev = document.querySelector('.prev');
+
+    next.addEventListener('click', function () {
+      let items = document.querySelectorAll('.items');
+      let slide = document.querySelector('.slide');
+      slide.appendChild(items[0]);
+    });
+
+    prev.addEventListener('click', function () {
+      let items = document.querySelectorAll('.items');
+      let slide = document.querySelector('.slide');
+      slide.prepend(items[items.length - 1]);
+    });
+        
+       
+   
+    </script>
+
