@@ -11,10 +11,11 @@
     <h1>KFC 🍗</h1>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Deals</a></li>
-        <li><a href="#">Order Now</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="daminos.html">Daminos</a></li>
+        <li><a href="kfc.html">KFC</a></li>
+        <li><a href="mc.donalds.html">Mc.Donalds</a></li>
+        <li><a href="amul.html">Amul</a></li>
       </ul>
     </nav>
   </header>
@@ -78,12 +79,34 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
+  overflow: hidden;
+padding-right: 400px;
+   border-radius: 10px;
+   display: flexbox;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
+  
   font-weight: bold;
+  color: black;
+   margin: 5px;
+    float: left;
+    display: flex;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover{
+  background-color:white;
+    border-radius: 10px;
+    border: 2px;
+    color: red;
+    border-style: solid;
+    border-color:whitesmoke;
+    transition: .70s;
 }
 
 .hero {

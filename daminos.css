@@ -10,7 +10,7 @@ body{
 }
 .container{
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 1000px;
@@ -202,4 +202,10 @@ text-decoration:underline;
     color:blueviolet;
     text-decoration: underline;
     text-decoration-color:gray ;
+}
+.nav .head{
+    padding-left: 160px;
+    color: red;
+  
+    
 }
