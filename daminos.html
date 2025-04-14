@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    
+
+    <title>Document</title>
+    <link rel="stylesheet" href="daminos.css">
+</head> 
+<body>
+
+  <div class="nav">
+    <a href="home.html">Home</a>
+    <a href="daminos.html">Daminos</a>
+    <a href="home.html">KFC</a>
+    <a href="home.html">Mc.Donalds</a>
+    <a href="home.html">ibaco</a>
+    
+  </div>
+    <div class="container">
+
+        <div class="slide">
+
+            <div class="items" style="background-image: url(images/img1.jpg);  ">
+               <div class="content">
+                <div class="name">PIZZA</div>
+                <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ipsam.</div>
+                <button>ORder now</button>
+               </div>
+            
+            
+            </div>
+            
+            <div class="items" style="background-image: url(images/img2.jpg); ">
+                <div class="content">
+                 <div class="name">PIZZA</div>
+                 <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ipsam.</div>
+                 <button>ORder now</button>
+                </div>
+             
+             
+             </div>
+             
+            <div class="items" style="background-image: url(images/img3.jpg); ">
+                <div class="content">
+                 <div class="name">PIZZA</div>
+                 <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ipsam.</div>
+                 <button>ORder now</button>
+                </div>
+             
+             
+             </div>
+             
+            <div class="items" style="background-image: url(images/img4.jpg); ">
+                <div class="content">
+                 <div class="name">PIZZA</div>
+                 <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, ipsam.</div>
+                 <button>ORder now</button>
+                </div>
+             
+             
+             </div>
+
+        </div>
+        <div class="button">
+            <button class="prev" onclick="change()">forward</button>
+            <button class="next" onclick="change()">backward</i></i></button>
+
+        </div>
+    </div>
+</body>
+</html>
+    <script >
+
+  
+ let next = document.querySelector('.next');
+    let prev = document.querySelector('.prev');
+
+    next.addEventListener('click', function () {
+      let items = document.querySelectorAll('.items');
+      let slide = document.querySelector('.slide');
+      slide.appendChild(items[0]);
+    });
+
+    prev.addEventListener('click', function () {
+      let items = document.querySelectorAll('.items');
+      let slide = document.querySelector('.slide');
+      slide.prepend(items[items.length - 1]);
+    });
+        
+       
+   
+    </script>
+
