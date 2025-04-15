@@ -10,7 +10,7 @@
    
 </head> 
 <body>
-
+<div class="one">
   <div class="nav">
     <h1 class="head">Daminos🍕</h1>
     
@@ -39,7 +39,7 @@
                         <li>Super popular among vegetarians</li>
                     </ul>
                 </div>
-                <button>Order now</button>
+                <button onclick="scrollToOrder()">Order now</button>
                </div>
             
             
@@ -55,7 +55,7 @@
                         </li>
                         <li> A colorful and tasty combo</li>
                  </ul></div>
-                 <button>Order now</button>
+                 <button onclick="scrollToOrder()">Order now</button>
                 </div>
              
              
@@ -70,7 +70,7 @@
 
                     </li></ul>
                  </div>
-                 <button>Order now</button>
+                 <button onclick="scrollToOrder()">Order now</button>
                 </div>
              
              
@@ -83,7 +83,7 @@
                     <li>Not a topping but a style—molten cheese inside the crust!</li>
                     <li>Invented in India, and everyone loves it 😋</li>
                  </ul></div>
-                 <button>Order now</button>
+                 <button onclick="scrollToOrder()">Order now</button>
                 </div>
              
              
@@ -101,27 +101,74 @@
     <div class="h1">
         <h1>Chicken Pizza🍕</h1>
     </div>
-   <div class="img" style=" display: flex;">
-    <img src="images/img5.jpg" class="a">
-    <img src="images/img6.jpg" class="b">
-    <img src="images/img7.jpg" class="c" >
-    <img src="images/img8.jpg" class="d">
-    
-   </div>
+   
  
 </section>
-<section style="margin-top:1000px ;">
+<section style="margin-top:1000px ; " id="order-form">
 <div class="contact-details">
-    <h1>Contact US</h1>
+    <hr>
+    <h1>Order Here</h1>
+<form id="pizza-order-form">
+        <table border="5" class="order-details">
+       
+            <tr>
+                <td >Pizza Name</td>
+                <td>
+                    <input type="text" id="Name">
+                </td>
+            </tr>
+            <tr ><td>Quantity</td>
+            <td ><input type="number" id="Age"></td>
+        </tr>
+       
+        <tr>
+            <td>Course</td>
+          <td>
+            <select  id="Course" >
+                <option value="" >Select Your Option</option>
+            <option>Cheese Burst  </option>
+            <option >Thin Crust   </option>
+            <option >New Hand Tossed</option>
+            <option >Fresh Pan</option>
+          
+        </select>
+        </td>
+            </tr>
+            <tr>
+                <td>Delivery Address</Address></td>
+                <td ><textarea name="" id="" style="width: 100%; height: 100%;"></textarea></td>
+            </tr>
+            
+          <tr>
+            <td>Payment</td>
+            <td class="radio">
+              <input type="radio" name="payment" value="Cash on Delivery" required> Cash on Delivery<br>
+              <input type="radio" name="payment" value="UPI" required> UPI<br>
+              <input type="radio" name="payment" value="Card" required> Credit/Debit Card
+            </td>
+          </tr>
+            
+                <td colspan="2" style="text-align:center;">
+                    <button type="button" class="raj" >Save</button>
+                </td>
+               
+            </tr>
+             
+          
+                
+        </table  >
+    </form>
+    </div>
 
 </div>
 </section>
+</div>
 
 </body>
 </html>
     <script >
 
-  
+  //this code for a animation of pizza bar
  let next = document.querySelector('.next');
     let prev = document.querySelector('.prev');
 
@@ -136,8 +183,23 @@
       let slide = document.querySelector('.slide');
       slide.prepend(items[items.length - 1]);
     });
-        
-   
+
+// these code for a order form
+    function scrollToOrder() {
+  document.getElementById('order-form').scrollIntoView({
+    behavior: 'smooth'
+  });
+}
+
+  //this code for a order form filling      
+document.getElementById("pizza-order-form").addEventListener("submit", function (e) {
+      
+      alert("Your pizza order has been saved! 🍕 Thank you!");
+    }); 
+
+ 
+
+
    
     </script>
 

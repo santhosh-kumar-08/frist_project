@@ -8,6 +8,11 @@ body{
 
 
 }
+.one{
+    display:flexbox;
+    flex-direction: column;
+    min-height: 100vh;
+}
 .container{
     position: absolute;
     top: 70%;
@@ -149,6 +154,7 @@ body{
    padding-left: 500px;
    border-radius: 10px;
    display: flexbox;
+   background-color: turquoise;
  
 
 
@@ -160,7 +166,7 @@ body{
     float: left;
     display: flex;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
+
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
@@ -169,10 +175,10 @@ body{
 
   .nav a:hover{
      
-    background-color: red;
+    background-color:white;
     border-radius: 10px;
     border: 2px;
-    color: white;
+    color: red;
     border-style: solid;
     border-color:whitesmoke;
     transition: .70s;
@@ -196,10 +202,11 @@ text-decoration:underline;
     transition: 0.5s;
 }
 
-.contact-details{
+.contact-details h1{
     text-align: center;
-    font-size: 30px;
-    color:blueviolet;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:color-mix(in srgb, white 70%, gray 30%);
     text-decoration: underline;
     text-decoration-color:gray ;
 }
@@ -210,31 +217,35 @@ text-decoration:underline;
     
 }
 
-.img .a{
-    margin-top: 30px;
-    width: 220px;
-    height: 220px;
-    margin: 2px;
-    margin-left: 3px;
+
+table{
+   
+    margin-left: 500px;
+    margin-top: 10px;
+    
+  
 }
-.img .b{
-    margin-top: 30px;
-    width: 220px;
-    height: 220px;
-    margin: 2px;
-    margin-left: 3px;
+table.order-details{
+    display: flexbox;
+    align-content: center;
+    background-color: white;
+    color: black;
+    width: 40%;
+    height:250px;
+    padding: 10px;
+    border-color: black;
+  border-style: ridge;
+ 
 }
-.img .c{
-    margin-top: 30px;
-    width: 220px;
-    height: 220px;
-    margin: 2px;
-    margin-left: 3px;
+
+.order-details  button {
+    width: 50%
 }
-.img .d{
-    margin-top: 30px;
-    width: 220px;
-    height: 220px;
-    margin: 2px;
-    margin-left: 3px;
+
+.order-details input{
+    width: 100%;
+    height: 100%;
+}
+.contact-details{
+    background-color: red;
 }
