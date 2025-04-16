@@ -39,7 +39,7 @@
                         <li>Super popular among vegetarians</li>
                     </ul>
                 </div>
-                <button onclick="scrollToOrder()">Order now</button>
+                <button onclick="scrollToOrder(this)" data-name="Paneer Tikka Pizza">Order now</button>
                </div>
             
             
@@ -101,7 +101,20 @@
     <div class="h1">
         <h1>Chicken Pizza🍕</h1>
     </div>
-   
+   <!-- pending here -->
+    <div class="img-1">
+      <table >
+      <tr><td ><img src="images/p.1.jpg" alt=""></td></tr>
+      
+    </table>
+    </div>
+    <div class="img-2">
+      <img src="images/p.2.jpg" alt="">
+    </div>
+    <div class="img-3">
+      <img src="images/p.3.jpg" alt="">
+    </div>
+   <!--finish here the pending-->
  
 </section>
 <section style="margin-top:1000px ; " id="order-form">
@@ -122,7 +135,7 @@
         </tr>
        
         <tr>
-            <td>Course</td>
+            <td>Crust Type</td>
           <td>
             <select  id="Course" >
                 <option value="" >Select Your Option</option>
@@ -143,23 +156,15 @@
             <td>Payment</td>
             <td class="radio">
                <select name="" id="">
-                <option value="">Cheese Burst</option>
-                
-             
+                <option value="number">UPI</option>
+               <option value="number">Cash on Delivery</option>
+                <option value="number">Credit Card</option>
 
-
-
-
-
-
-
-
-
-               </select>
+              </select>
           </tr>
             
-                <td colspan="2" style="text-align:center;">
-                    <button type="button" class="raj" >Save</button>
+                <td colspan="2" style="text-align:center;" >
+                    <button type="button" class="raj" onclick="placeholder()">Save</button>
                 </td>
                
             </tr>
@@ -168,10 +173,22 @@
                 
         </table  >
     </form>
+    <hr>
     </div>
 
 </div>
 </section>
+
+
+
+<div class="contact">
+<h1>Contact-Us</h1>
+
+
+
+</div>
+
+
 </div>
 
 </body>
@@ -201,11 +218,10 @@
   });
 }
 
-  //this code for a order form filling      
-document.getElementById("pizza-order-form").addEventListener("submit", function (e) {
-      
-      alert("Your pizza order has been saved! 🍕 Thank you!");
-    }); 
+ function placeholder(){
+  document.getElementById("pizza-order-form").reset();
+ }   
+
 
  
 
