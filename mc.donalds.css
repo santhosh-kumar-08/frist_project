@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:white;
+    display: flexbox;
+
+
+}
+
+.nav {
+  
+
+    overflow: hidden;
+   padding-left: 500px;
+   border-radius: 10px;
+   display: flexbox;
+   background-color: rgb(48, 42, 42);
+ 
+
+
+}
+.nav a {
+    color: white;
+   margin: 5px;
+    float: left;
+    display: flex;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: medium;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  .nav a:hover{
+     
+    background-color:white;
+    border-radius: 10px;
+    border: 2px;
+    color: red;
+    border-style: solid;
+    border-color:whitesmoke;
+    transition: .70s;
+  
+
+  }
+  .nav .head{
+    padding-left: 160px;
+    color: yellow;
+}
+.circle{
+    width: 200px;      
+      height: 200px;
+      border-radius: 60%; 
+      object-fit: cover;  
+      border: 2px solid #333;
+      margin-top: 20px;
+   margin-left: 50px;
+   
+}
+
+.circle:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.color h1{
+    color: red;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    margin-top: 10px;
+    background-color: gold;
+    text-align: center;
+  
+}
+.vegburgur{
+    display: flex;
+  overflow-x: auto;         /* 💡 Enables side scrolling */
+  scroll-behavior: smooth;  /* Optional: smooth scroll */
+  gap: 20px;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.vegburgur::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .vegburgur::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
