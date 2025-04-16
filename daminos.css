@@ -5,6 +5,7 @@
 }
 body{
     background-color:white;
+    display: flexbox;
 
 
 }
@@ -213,19 +214,23 @@ text-decoration:underline;
 
 .img img{
     border-radius: 10px;
-    margin-left: 20px;
+    margin-left: 40px;
     height: 450px;
 
 }
 
-.list{
+.list1{
     
       display: flex;
       /* center horizontally */
      gap: 20px; /* space between tables */
      margin-top: 20px;
+        margin-left: 30px;
 }
+.list1 ul li{
+    margin-left: 25px;
 
+}
 
 table h1 {
     color:red;
@@ -257,7 +262,7 @@ table button:hover{
 
 
 
-.list button{
+.list1 button{
     padding: 10px 20px;
     border-radius: 10px;
     border-color: #505050;
@@ -265,16 +270,6 @@ table button:hover{
     color: red;
 
 }
-
-
-
-
-
-
-
-
-
-
 
 table.order-details{
     display: flexbox;
