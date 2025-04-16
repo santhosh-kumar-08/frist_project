@@ -232,6 +232,7 @@ table.order-details{
     color: black;
     width: 40%;
     height:250px;
+  
     padding: 10px;
     border-color: black;
   border-style: ridge;
@@ -248,4 +249,10 @@ table.order-details{
 }
 .contact-details{
     background-color: red;
+}
+
+.radio {
+
+   
+    
 }
