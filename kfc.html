@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<!DOCTYPE
+
+
+
+ html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -10,12 +14,13 @@
   <header>
     <h1>KFC 🍗</h1>
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Deals</a></li>
-        <li><a href="#">Order Now</a></li>
-      </ul>
+        <ul>
+        <a href="#">Home</a>
+        <a href="#">Dominos</a>
+        <a href="#">KFC</a>
+        <a href="#">MC.Donalds</a>
+        <a href="#">Amul</a>
+        </ul>
     </nav>
   </header>
 
@@ -29,15 +34,15 @@
     <h3>Popular Items</h3>
     <div class="items">
       <div class="card">
-        <img src="https://source.unsplash.com/300x200/?fried-chicken" alt="Chicken Bucket">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.ichwntZYBpyxXFNws_0F-gHaE7&pid=Api&P=0&h=180" alt="Chicken Bucket">
         <h4>Chicken Bucket</h4>
       </div>
       <div class="card">
-        <img src="https://source.unsplash.com/300x200/?burger" alt="Zinger Burger">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.ldusUl7_FesRBijicoTubwHaHP&pid=Api&P=0&h=180 " alt="Zinger Burger">
         <h4>Zinger Burger</h4>
       </div>
       <div class="card">
-        <img src="https://source.unsplash.com/300x200/?fries" alt="Fries">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.HOrYpSqerIfTF9py1APdaQHaJU&pid=Api&P=0&h=180" alt="Fries">
         <h4>Fries</h4>
       </div>
     </div>
@@ -57,39 +62,47 @@
 }
 
 body {
-  background-color: #fff8f6;
+  background-color: #e4e4e4;
   color: #2b2b2b;
 }
 
 header {
-  background-color: #d92323;
-  color: white;
-  padding: 20px;
+  background-color: #ffffff;
+  color: rgb(7, 6, 6);
+  padding: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 header h1 {
-  font-size: 28px;
+  font-size: 25px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
+  padding: 5px;
 }
 
 nav a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-weight: bold;
+  padding-right: 50px;
+  text-align: center;
 }
-
+nav a:hover{
+    background-color: coral;
+    color:maroon;
+    padding:5px;
+    transition: .50s;
+}
 .hero {
   text-align: center;
   padding: 60px 20px;
-  background-color: #fff0f0;
+  background-color: #ffffff;
 }
 
 .hero h2 {
@@ -110,6 +123,7 @@ nav a {
 .menu-preview {
   padding: 40px 20px;
   text-align: center;
+  background-color: #e4e4e4;
 }
 
 .items {
@@ -122,7 +136,7 @@ nav a {
 
 .card {
   background: white;
-  border: 1px solid #eee;
+  border: 1px solid #ffffff;
   padding: 15px;
   border-radius: 10px;
   width: 200px;
