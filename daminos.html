@@ -117,8 +117,8 @@
     
     </table>
     <table border="2" >
-      <tr><td><h1>Chicken Tikka Pizza</h1></td></tr>
-      <tr><td><ul><li>Spicy grilled chicken tikka pieces, onions, capsicum, and cheese</li> <li>Very popular desi-style non-veg pizza</li></ul></td></tr>
+      <tr><td><h1>Peri Peri Chicken Pizza</h1></td></tr>
+      <tr><td><ul><li>Peri peri spiced chicken, bell peppers, and cheese</li> <li>Has a tangy-spicy kick</li></ul></td></tr>
       <tr><td colspan="2" style="text-align:center;"><button onclick="scrollToOrder()">Order now</button></td></tr>
 
     
@@ -126,8 +126,8 @@
 
   </table>
   <table border="2" >
-    <tr><td><h1>Chicken Tikka Pizza</h1></td></tr>
-    <tr><td><ul><li>Spicy grilled chicken tikka pieces, onions, capsicum, and cheese</li> <li>Very popular desi-style non-veg pizza</li></ul></td></tr>
+    <tr><td><h1>Butter Chicken Pizza</h1></td></tr>
+    <tr><td><ul><li>Creamy North Indian butter chicken on pizza crust</li> <li>Rich and flavorful, found in many fusion restaurants</li></ul></td></tr>
     <tr><td colspan="2" style="text-align:center;"><button onclick="scrollToOrder()">Order now</button></td></tr>
 
   
@@ -135,7 +135,7 @@
 
 </div>
    
-      <!--Very popular desi-style non-veg pizza--> 
+    
    
 </section>
 <section   id="order-form">
@@ -152,13 +152,13 @@
                 </td>
             </tr>
             <tr ><td>Quantity</td>
-            <td ><input type="number" id="Age"></td>
+            <td ><input type="number" id="quantity"></td>
         </tr>
        
         <tr>
             <td>Crust Type</td>
           <td>
-            <select  id="Course" >
+            <select  id="crust" >
                 <option value="" >Select Your Option</option>
             <option>Cheese Burst  </option>
             <option >Thin Crust   </option>
@@ -170,7 +170,7 @@
             </tr>
             <tr>
                 <td>Delivery Address</Address></td>
-                <td ><textarea name="" id="" style="width: 100%; height: 100%;"></textarea></td>
+                <td ><textarea name="" id="Delivery" style="width: 100%; height: 100%;"></textarea></td>
             </tr>
             
           <tr>
@@ -185,7 +185,7 @@
           </tr>
             
                 <td colspan="2" style="text-align:center;" >
-                    <button type="button" class="raj" onclick="placeholder()">Save</button>
+                    <button type="button" class="raj" onclick="change()">Save</button>
                 </td>
                
             </tr>
@@ -243,9 +243,24 @@
   });
 }
 
- function placeholder(){
-  document.getElementById("pizza-order-form").reset();
- }   
+
+
+
+ function change() {
+     var name =document.getElementById("Name").value;
+     var quantity =document.getElementById("quantity").value;
+     var crust =document.getElementById("crust").value;
+     var delivery =document.getElementById("Delivery").value;
+
+     if(name=="" || quantity=="" || crust=="" || delivery==""){
+        alert("please fill the order form");
+ }
+ else{
+    alert("your oreder has been taken successfully 🍕");
+     }
+     document.getElementById("pizza-order-form").reset();
+ }
+
 
 
  
