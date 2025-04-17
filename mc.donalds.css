@@ -42,7 +42,7 @@ font-size: medium;
     border-style: solid;
     border-color:whitesmoke;
     transition: .70s;
-  
+    
 
   }
   .nav .head{
@@ -56,12 +56,13 @@ font-size: medium;
       object-fit: cover;  
       border: 2px solid #333;
       margin-top: 30px;
-   margin-left: 50px;
+      margin-left: 50px;
+
    
 }
 
 .circle:hover{
-    transform: scale(1.2);
+  transform: scale(1.2);
     transition: 0.5s;
 }
 
@@ -111,6 +112,7 @@ font-size: medium;
     transform: scale(1.1);
     cursor: pointer;
     transition: 0.5s;
+
   }
 
   .color1 h1{
@@ -125,7 +127,23 @@ font-size: medium;
   }
 
   .contact{
-    background-color: gray;
-    height: 100%;
-    width: 100%;
+    background-color: rgb(46, 30, 30);
+   height: 300px;
+    
+
+    
   }
+.contact1 h1{
+  color: white;
+ font-size: 50px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ text-align: center;
+ margin-top: 5px;
+ text-decoration:dotted underline ;
+
+ 
+}
+
+
+
+  
