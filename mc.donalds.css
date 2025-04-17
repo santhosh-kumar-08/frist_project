@@ -1,12 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-}
-
-=======
     box-sizing: border-box;
 }
+
 body{
     background-color:white;
     display: flexbox;
@@ -151,4 +148,4 @@ font-size: medium;
 
 
   
->>>>>>> b70e02dcc144c57b5aca149e389bd5a07e231a13
+
