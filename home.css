@@ -11,7 +11,7 @@ body{
 
 .content{
     background-color:aliceblue;
-    padding-left: 600px;
+    padding-left: 750px;
     height: 60px;
     margin-top: 10px;
 
@@ -164,14 +164,7 @@ hr{
   margin-top: 20px;
 }
 
-.about h1{
-  text-align: center;
-  margin-top: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 50px;
-  color: purple;
-  text-decoration: underline gray;
-}
+
 
 .order img{
   display: flex;
@@ -202,3 +195,43 @@ hr{
  
 }
 
+.about h1{
+  text-align: center;
+  margin-top: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  color: purple;
+  text-decoration: underline gray;
+}
+
+
+.about p{
+  font-family: cursive;
+ margin-top: 20px;
+ font-size: 20px;
+}
+
+.contact h1{
+  text-align: center;
+  margin-top: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 45px;
+ color: purple;
+ text-decoration: underline gray;
+  
+}
+.contact p{
+  font-family: cursive;
+ margin-top: 20px;
+ font-size: 20px;
+}
+
+.contact h2{
+  text-align: center;
+  margin-top: 10px;
+  color:color-mix(in srgb, gray 50%, black 50%)
+}
+.contact a{
+  
+  text-decoration: none;
+}
