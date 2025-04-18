@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:white;
+    display: flexbox;
+
+
+}
+
+
+.nav {
+  
+
+    overflow: hidden;
+   padding-left: 500px;
+   border-radius: 10px;
+   display: flexbox;
+   background-color: rgb(48, 42, 42);
+ 
+
+
+}
+.nav a {
+    color: white;
+   margin: 5px;
+    float: left;
+    display: flex;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: medium;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  .nav a:hover{
+     
+    background-color:white;
+    border-radius: 10px;
+    border: 2px;
+    color: red;
+    border-style: solid;
+    border-color:whitesmoke;
+    transition: .70s;
+    
+  }
