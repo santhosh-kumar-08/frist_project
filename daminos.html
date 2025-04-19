@@ -10,14 +10,14 @@
    
 </head> 
 <body>
-
+<div class="one">
   <div class="nav">
     <h1 class="head">Daminos🍕</h1>
     
     <a href="home.html">Home</a>
     <a href="daminos.html">Daminos</a>
     <a href="kfc.html">KFC</a>
-    <a href="home.html">Mc.Donalds</a>
+    <a href="mc.donalds.html">Mc.Donalds</a>
     <a href="amul.html">Amul</a>
     
   </div>
@@ -39,7 +39,7 @@
                         <li>Super popular among vegetarians</li>
                     </ul>
                 </div>
-                <button>Order now</button>
+                <button onclick="scrollToOrder(this)" data-name="Paneer Tikka Pizza">Order now</button>
                </div>
             
             
@@ -55,7 +55,7 @@
                         </li>
                         <li> A colorful and tasty combo</li>
                  </ul></div>
-                 <button>Order now</button>
+                 <button onclick="scrollToOrder()">Order now</button>
                 </div>
              
              
@@ -70,7 +70,7 @@
 
                     </li></ul>
                  </div>
-                 <button>Order now</button>
+                 <button onclick="scrollToOrder()">Order now</button>
                 </div>
              
              
@@ -83,7 +83,7 @@
                     <li>Not a topping but a style—molten cheese inside the crust!</li>
                     <li>Invented in India, and everyone loves it 😋</li>
                  </ul></div>
-                 <button>Order now</button>
+                 <button onclick="scrollToOrder()">Order now</button>
                 </div>
              
              
@@ -91,8 +91,8 @@
 
         </div>
         <div class="button">
-            <button class="prev" onclick="change()">←</button>
-            <button class="next" onclick="change()">→</i></i></button>
+            <button class="prev" onclick="select()">←</button>
+            <button class="next"onclick="select()" >→</button>
 
         </div>
     </div>
@@ -101,27 +101,126 @@
     <div class="h1">
         <h1>Chicken Pizza🍕</h1>
     </div>
-    <div class="slider">
-        <div class="img">
-            <img src="images/img5.jpg" alt="">
-            <h1>Butter Chicken Pizza</h1>
-            <p><ul><li>Creamy North Indian butter chicken on pizza crust</li> 
-                <li>Rich and flavorful, found in many fusion restaurants</li></ul></p>
-        </div>
- 
+   <div class="img">
+   
+     <img src="images/p.1.jpg" alt="1">  
+     <img src="images/p.2.jpg" alt="2">
+     <img src="images/p.3.jpg" alt="3">
+  </div>
+
+  <div class="list1">
+    <table border="2" >
+      <tr><td><h1>Chicken Tikka Pizza</h1></td></tr>
+      <tr><td><ul><li>Spicy grilled chicken tikka pieces, onions, capsicum, and cheese</li> <li>Very popular desi-style non-veg pizza</li></ul></td></tr>
+      <tr><td colspan="2" style="text-align:center;"><button onclick="scrollToOrder()">Order now</button></td></tr>
+
+    
+    </table>
+    <table border="2" >
+      <tr><td><h1>Peri Peri Chicken Pizza</h1></td></tr>
+      <tr><td><ul><li>Peri peri spiced chicken, bell peppers, and cheese</li> <li>Has a tangy-spicy kick</li></ul></td></tr>
+      <tr><td colspan="2" style="text-align:center;"><button onclick="scrollToOrder()">Order now</button></td></tr>
+
+    
+    </table>
+
+  </table>
+  <table border="2" >
+    <tr><td><h1>Butter Chicken Pizza</h1></td></tr>
+    <tr><td><ul><li>Creamy North Indian butter chicken on pizza crust</li> <li>Rich and flavorful, found in many fusion restaurants</li></ul></td></tr>
+    <tr><td colspan="2" style="text-align:center;"><button onclick="scrollToOrder()">Order now</button></td></tr>
+
+  
+  </table>
+
+</div>
+   
+    
+   
 </section>
-<section style="margin-top:100px ;">
+<section   id="order-form">
 <div class="contact-details">
-    <h1>Contact US</h1>
+    <hr>
+    <h1>Order Here</h1>
+<form id="pizza-order-form">
+        <table border="5" class="order-details">
+       
+            <tr>
+                <td >Pizza Name</td>
+                <td>
+                    <input type="text" id="Name">
+                </td>
+            </tr>
+            <tr ><td>Quantity</td>
+            <td ><input type="number" id="quantity"></td>
+        </tr>
+       
+        <tr>
+            <td>Crust Type</td>
+          <td>
+            <select  id="crust" >
+                <option value="" >Select Your Option</option>
+            <option>Cheese Burst  </option>
+            <option >Thin Crust   </option>
+            <option >New Hand Tossed</option>
+            <option >Fresh Pan</option>
+          
+        </select>
+        </td>
+            </tr>
+            <tr>
+                <td>Delivery Address</Address></td>
+                <td ><textarea name="" id="Delivery" style="width: 100%; height: 100%;"></textarea></td>
+            </tr>
+            
+          <tr>
+            <td>Payment</td>
+            <td class="radio">
+               <select name="" id="">
+                <option value="number">UPI</option>
+               <option value="number">Cash on Delivery</option>
+                <option value="number">Credit Card</option>
+
+              </select>
+          </tr>
+            
+                <td colspan="2" style="text-align:center;" >
+                    <button type="button" class="raj" onclick="change()">Save</button>
+                </td>
+               
+            </tr>
+             
+          
+                
+        </table  >
+    </form>
+    <hr>
+    </div>
 
 </div>
 </section>
+
+
+
+<div class="contact">
+<h1>Contact-Us</h1>
+
+<h3>ph:9344949097 , 7871646640</h3>
+
+<h3>Instagram</h3>
+<h3>YouTube</h3>
+
+
+</div>
+
+
+</div>
 
 </body>
 </html>
     <script >
 
-  
+  //this code for a animation of pizza bar
  let next = document.querySelector('.next');
     let prev = document.querySelector('.prev');
 
@@ -136,8 +235,42 @@
       let slide = document.querySelector('.slide');
       slide.prepend(items[items.length - 1]);
     });
-        
-   
+
+// these code for a order form
+    function scrollToOrder() {
+  document.getElementById('order-form').scrollIntoView({
+    behavior: 'smooth'
+  });
+}
+
+
+
+
+ function change() {
+     var name =document.getElementById("Name").value;
+     var quantity =document.getElementById("quantity").value;
+     var crust =document.getElementById("crust").value;
+     var delivery =document.getElementById("Delivery").value;
+
+     if(name=="" || quantity=="" || crust=="" || delivery==""){
+        alert("please fill the order form");
+ }
+ else{
+    alert("your oreder has been taken successfully 🍕");
+     }
+     document.getElementById("pizza-order-form").reset();
+ }
+
+ function select(){
+  var get = document.getElementById("one");
+get.behavior='smooth'  
+}
+
+
+
+ 
+
+
    
     </script>
 

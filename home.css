@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:white;
+    display: flexbox;
+
+}
+
+.content{
+    background-color:aliceblue;
+    padding-left: 750px;
+    height: 60px;
+    margin-top: 10px;
+
+}
+.content a{
+    
+    color: black;
+   margin: 5px;
+    float: left;
+    display: flex;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    
+   
+}
+.content a:hover{
+    transform: scaleX(1.1);
+    text-decoration: underline red;
+    transition: 0.5s;
+  
+    
+}
+.h1 h1{
+    color: brown;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+  text-align: center;
+  margin-top: 60px;
+  transform: matrix(10px);
+  transition: 0.5s;
+  ;
+   
+}
+
+
+
+
+
+.falling-flowers {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* So it doesn't interfere with clicking other elements */
+    z-index: 1000;
+  }
+  
+  .flower {
+    position: absolute;
+    top: -5%;
+    font-size: 30px;
+    animation:linear fall;
+  }
+  
+  .flower:nth-child(1) {
+    left: 50%;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    
+  }
+  
+  .flower:nth-child(2) {
+    left: 30%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+  }
+  
+  .flower:nth-child(3) {
+    left: 50%;
+    animation-duration: 6s;
+    animation-delay: 2s;
+  }
+  
+  .flower:nth-child(4) {
+    left: 60%;
+    animation-duration: 8s;
+    animation-delay: 3s;
+  }
+  
+  .flower:nth-child(5) {
+    left: 43%;
+    animation-duration: 9s;
+    animation-delay: 0.2s;
+  }
+  .flower:nth-child(6) {
+    left: 50%;
+    animation-duration: 9s;
+    animation-delay: 0.7s;
+  }
+  .flower:nth-child(7) {
+    left: 47%;
+    animation-duration: 9s;
+    animation-delay: 1s;
+  }
+  .flower:nth-child(8) {
+    left: 45%;
+    animation-duration: 9s;
+    animation-delay: 2s;
+  }
+
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+  
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+      opacity: 0.3;
+    }
+  }
+  
+
+  .circle{
+    width: 200px;      
+      height: 200px;
+      border-radius: 60%; 
+      object-fit: cover;  
+      border: 2px solid #333;
+      margin-top: 30px;
+      margin-left: 125px;
+
+   
+}
+
+.circle:hover{
+  transform: scale(1.1);
+    transition: 0.5s;
+
+}
+
+.brands{
+  display: flex;
+  gap: 250px;
+margin-top: 20px;
+  margin-left: 145px;
+  color: red;
+}
+.brand1{
+  display: flex;
+gap: 170px;
+}
+
+hr{
+  margin-top: 20px;
+}
+
+
+
+.order img{
+  display: flex;
+  overflow-x: auto;         /*  Enables side scrolling */
+  scroll-behavior: smooth;  /* Optional: smooth scroll */
+  gap: 20px;
+  padding: 10px;
+  max-width: 100%;
+ height: 300px;
+ 
+}
+.pic{
+  flex: 0 0 auto;            /* 💡 Prevent shrinking */
+  height: 300px;
+    margin-left: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-top: 30px;
+}
+
+.company{
+  font: bold;
+  font-family: initial Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 35px;
+  text-decoration: underline #333;
+ 
+}
+
+.about h1{
+  text-align: center;
+  margin-top: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  color: purple;
+  text-decoration: underline gray;
+}
+
+
+.about p{
+  font-family: cursive;
+ margin-top: 20px;
+ font-size: 20px;
+}
+
+.contact h1{
+  text-align: center;
+  margin-top: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 45px;
+ color: purple;
+ text-decoration: underline gray;
+  
+}
+.contact p{
+  font-family: cursive;
+ margin-top: 20px;
+ font-size: 20px;
+}
+
+.contact h2{
+  text-align: center;
+  margin-top: 10px;
+  color:color-mix(in srgb, gray 50%, black 50%)
+}
+.contact a{
+  
+  text-decoration: none;
+}
