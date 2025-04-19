@@ -7,7 +7,7 @@
 </head>
 <body>
   <header>
-   
+   <img src="images/amul.jpg" alt="">
     <h1>Amul 🧈</h1>
     <nav>
 
@@ -25,27 +25,33 @@
   <section class="hero">
     <h2>The Taste of India</h2>
     <p>India's favorite dairy brand, bringing health and happiness to every home.</p>
-    <a href="#" class="btn">Explore Products</a>
+    <a href="home.html" class="btn">Explore Products</a>
   </section>
 
-  <section class="products">
-    <h3>Our Bestsellers</h3>
-    <div class="product-list">
-      <div class="card">
-        <img src="https://tse3.mm.bing.net/th?id=OIP.LLk4znj2v1fCjBNW6uZWiAHaHa&pid=Api&P=0&h=180" alt="chocolate">
-        <p>chocolate</p>
-      </div>
-      <div class="card">
-        <img src="https://www.bigbasket.com/media/uploads/p/l/40005431-10_1-amul-real-ice-cream-butterscotch-bliss.jpg" alt="Butterscotch">
-        <p>Butterscotch</p>
-      </div>
-      <div class="card">
-        <img src="https://tse4.mm.bing.net/th?id=OIP.137DAYUguiRiO9lizA6siwHaFm&pid=Api&P=0&h=180" alt="Blackcurrent">
-        <p>blackcurrent</p>
-      </div>
+ <section>
+  <div class="summer">
+    <div class="summer1">
+      <h1>Summer Offer</h1>
+      <img src="images/a5.jpg" alt="">
     </div>
-  </section>
-
+    <div class="summer2">
+      <h1>Ice Cream Parlour</h1>
+      <img src="images/a1.jpg" alt="">
+    </div>
+   
+    
+  </div>
+  <div class="milk">
+    <div class="shake">
+      <img src="images/a2.jpg" alt="">
+      
+      <img src="images/a3.jpg" alt="">
+      <img src="images/a4.jpg" alt="">
+    </div>
+  </div>
+ 
+  
+ </section>
   <footer>
     <p>&copy; 2025 Amul Clone | Designed by Sandy 🧈</p>
   </footer>
@@ -74,27 +80,15 @@ header {
   align-items: center;
 }
 
-header h1 {
-  font-size: 28px;
+header img{
+  width: 100px;
+  height: auto;
+ 
 }
-nav {
-  
-  overflow: hidden;
-padding-right: 400px;
-   border-radius: 10px;
-   display: flexbox;
+header h1 {
+ margin-right: 700px;
 }
 
-nav a:hover {
-    border-color: #050505;
-    border-style:solid;
-    color:darkolivegreen;
-  background-color:aqua;
-  padding:5px;
-  border: 2px;
-  border-radius:10px ;
-  transition: .50s;
-}
 
 nav a {
   
@@ -103,9 +97,7 @@ nav a {
     float: left;
     display: flex;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
-    text-align: center;
-    padding: 14px 20px;
+   padding: 14px 20px;
     text-decoration: none;
 }
 nav a:hover {
@@ -141,35 +133,7 @@ nav a:hover {
   text-decoration: none;
 }
 
-.products {
-  padding: 40px 20px;
-  text-align: center;
-}
 
-.product-list {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.card {
-  width: 200px;
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.card img {
-  width: 100%;
-}
-
-.card p {
-  padding: 10px;
-  font-weight: bold;
-}
 
 footer {
   background: #0047ab;
@@ -178,4 +142,51 @@ footer {
   padding: 15px;
   margin-top: 30px;
 }
+
+.summer{
+  display: flex;
+  background: #e6f2ff;
+  
+}
+.summer1 img{
+  height: 400px;
+  width: 500px;
+  margin-left: 100px;
+ 
+ 
+}
+.summer2 img{
+  height: 300px;
+  width: 500px;
+  
+  margin-left: 100px;
+ 
+}
+
+.summer h1{
+  margin-left: 100px;
+  font-size: 40px;
+  color: #0047ab;
+  text-align: center;
+  
+}
+.milk{
+  display: flex;
+  background: #e6f2ff;
+  
+}
+.shake img{
+  
+  height: 300px;
+  width: 300px;
+  margin-top: 30px;
+  margin-left: 150px;
+  border-radius: 10px;
+ 
+}
+img:hover{
+  transform: translateY(10px);
+  transition: .70s;
+}
+
 </style>

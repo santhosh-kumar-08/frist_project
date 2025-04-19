@@ -124,8 +124,12 @@ table button{
 
 <script>
     function change(){
-        var button = document.getElementById('raj');
-        alert("Your Order is Placed Successfully 🍔");
-        
-    }
+   if(name=="" || quantity=="" || crust=="" || delivery==""){
+        alert("please fill the order form");
+ }
+ else{
+    alert("your oreder has been taken successfully 🍕");
+     }
+     document.getElementById("pizza-order-form").reset();
+ }
 </script>
